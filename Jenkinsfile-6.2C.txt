@@ -17,7 +17,7 @@ pipeline {
                     mail to: "wmyh0416@gmail.com",
                     subject: "Build status Email",
                     body: "Build was successful! Great job Yuhan!"
-                    
+                    emailext attachLog: true, body: '', subject: '', to: 'wmyh0416@gmail.com'
                 }
             }
         }
